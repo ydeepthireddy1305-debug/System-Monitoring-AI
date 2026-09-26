@@ -1,0 +1,7 @@
+.env
+venv/
+__pycache__/
+*.pyc
+.remediation_cpu.pid
+.remediation_ram.pid
+.remediation_disk.pid
