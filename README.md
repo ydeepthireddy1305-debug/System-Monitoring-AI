@@ -47,7 +47,6 @@ I used MySQL to store the monitoring data. This screenshot shows the database se
 - Render
 - Git and GitHub
 - pytest
-
 ## Run Locally
 
 ### 1. Clone the Repository
@@ -64,9 +63,13 @@ py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-### 3. Install Dependencies
+### 3. Install Backend Dependencies
 
-Install the required Python packages using the project's `requirements.txt` file.
+Install the required Python packages using the project's `requirements.txt` file. Run the command from the directory containing that file.
+
+```bash
+pip install -r requirements.txt
+```
 
 ### 4. Configure Environment Variables
 
@@ -77,6 +80,7 @@ Configure the required environment variables for the MySQL database connection, 
 Start the FastAPI backend using its configured entry point. In a separate terminal, navigate to the `frontend` directory, install the frontend dependencies, and start the React development server using the script defined in `package.json`.
 
 The backend API documentation is available at `/docs` when the server is running.
+
 ## Tests
 
 I used pytest to check the backend functionality. Run the tests from the appropriate project directory:
@@ -84,7 +88,6 @@ I used pytest to check the backend functionality. Run the tests from the appropr
 ```bash
 python -m pytest -q
 ```
-
 ## Project Links
 
 GitHub: https://github.com/ydeepthireddy1305-debug/System-Monitoring-AI
