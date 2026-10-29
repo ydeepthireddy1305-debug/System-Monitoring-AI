@@ -18,19 +18,19 @@ I built this project using Python and React to monitor system resource usage and
 
 The dashboard displays current resource usage, failure risk, incident counts, detected anomalies, and remediation statistics.
 
-![Monitoring Dashboard](screenshots/dashboard.png)
+![Monitoring Dashboard](dashboard.png)
 
 ### Backend Deployment
 
 The FastAPI backend is deployed as a Docker-based service on Render.
 
-![Backend Deployment](screenshots/deployment.png)
+![Backend Deployment](deployment.png)
+
 
 ### Database
 
 I used MySQL to store the monitoring data. This screenshot shows the database service configured in Aiven.
-
-![MySQL Database](screenshots/database.png)
+![MySQL Database](database.png)
 
 ## Technologies Used
 
