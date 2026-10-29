@@ -50,28 +50,33 @@ I used MySQL to store the monitoring data. This screenshot shows the database se
 
 ## Run Locally
 
-Clone the repository:
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/ydeepthireddy1305-debug/System-Monitoring-AI.git
 cd System-Monitoring-AI
 ```
 
-Create a Python virtual environment:
+### 2. Create a Python Virtual Environment
 
-```bash
+```powershell
 py -m venv .venv
-.venv\Scripts\Activate.ps1
+.\.venv\Scripts\Activate.ps1
 ```
 
-Install the backend dependencies using the requirements file in the appropriate project directory.
+### 3. Install Dependencies
 
-Configure the required environment variables for the database connection, JWT secret, and Gemini API key.
+Install the required Python packages using the project's `requirements.txt` file.
 
-Start the FastAPI backend using its configured entry point. Install the frontend dependencies in the frontend directory and start React using the script defined in package.json.
+### 4. Configure Environment Variables
 
-The backend API documentation can be accessed at `/docs` when the local server is running.
+Configure the required environment variables for the MySQL database connection, JWT secret, and Gemini API key. Keep passwords and API keys private.
 
+### 5. Start the Application
+
+Start the FastAPI backend using its configured entry point. In a separate terminal, navigate to the `frontend` directory, install the frontend dependencies, and start the React development server using the script defined in `package.json`.
+
+The backend API documentation is available at `/docs` when the server is running.
 ## Tests
 
 I used pytest to check the backend functionality. Run the tests from the appropriate project directory:
